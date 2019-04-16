@@ -15,9 +15,9 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 body{
-  background: ghostwhite;
-  margin-left: 0;
+  height: 100%;
   width: 100%;
+  overflow-x:hidden;
 }
 a{
     text-decoration: none;
