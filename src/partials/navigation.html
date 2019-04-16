@@ -1,0 +1,35 @@
+<nav class="flex-x shadow padding-y-1 fixed-top full-width">
+   <div class="logo margin-l-3 margin-t-2"><a href="/">QCredit</a></div>
+   <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
+       <li class="padding-y-2"><a class="active" href="#home">Home</a></li>
+
+       <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+       <ul class="accord m-l-4">
+           <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
+           <li class="padding-y-2"><a href="verified.html">Verified</a></li>
+           <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
+       </ul>
+
+       <li class="collapsible padding-y-3 drop">Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+           <ul class="accord margin-l-n4">
+               <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
+               <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
+               <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
+               <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
+               <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
+               <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
+           </ul>
+   </ul>
+   <div class="margin-l-auto margin-r-3 d-flex">
+       <button  class="collapsible padding-t-1 d-flex btn">
+           <span class="padding-r-2 margin-t-1">admin</span> 
+           <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user" >
+       </button>
+       <ul class="drop-content">
+           <li class="padding-y-1"><a>my account</a></li>
+           <li class="padding-y-1"><a>profile</a></li>
+           <li class="padding-y-1"><a>Notifications</a></li>
+       </ul>
+       <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
+   </div>
+</nav>
