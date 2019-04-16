@@ -18,12 +18,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-var title = document.getElementsByTagName("title")[0];
-var login = document.getElementsByTagName("body")[0];
-
-if ( title.innerHTML === "login"){
-  login.classList.add("login");
-}
 
 // signup
 var signup = document.getElementById("signup").addEventListener("click", signup);
