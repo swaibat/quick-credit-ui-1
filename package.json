@@ -1,0 +1,21 @@
+{
+  "name": "quick-credit-ui",
+  "version": "1.0.0",
+  "description": "Quick Credit is anonline lending platform that provides short term soft loans to individuals.This helps solve problems of financial inclusion as away to alleviate poverty and empower low income earners.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "panini": "^1.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rumbiiha swaibu",
+  "license": "MIT"
+}
