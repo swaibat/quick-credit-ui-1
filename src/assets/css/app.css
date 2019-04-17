@@ -95,7 +95,7 @@ footer {
 }
 
 .login main {
-  margin: 10rem;
+  margin: 7rem 10rem;
 }
 
 .login footer {
@@ -110,13 +110,33 @@ input {
   border-radius: var(--border-radius)
 }
 
+[type="checkbox"]{
+  width: 5%;
+}
+
+
 .align-center {
   text-align: center;
 }
 
 
 /* client page */
-
+.client .auth-btn,
+.client #collapse-menu{
+  display: none;
+}
+.client  main {
+  margin: 7rem 10rem;
+}
+.client footer {
+  margin-left: 0rem;
+}
+.client.account td, th {
+  border-bottom: none;
+}
+.client.account tr td:nth-child(even) {
+    float: right;
+}
 
 /* ========================[ media ]=====================*/
 
@@ -167,6 +187,7 @@ input {
   .login main {
       margin-left: 1rem;
   }
+
 }
 
 
@@ -251,7 +272,7 @@ input {
   font-size: 15px;
   line-height: 1.5;
   cursor: pointer;
-  color: #f1f1f1;
+  color: #b9b8b8;
 }
 
 .btn:hover {
@@ -284,6 +305,9 @@ input {
 
 
 /* table */
+.scroll-table{
+  overflow-x: auto;
+}
 
 .table {
   background: white;
