@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link  href="assets/css/app.min.css" rel="stylesheet">
-    <title>client</title>
+    <title>client account</title>
 </head>
-<body class="client">
+<body class="client account">
     <nav class="flex-x shadow padding-y-1 fixed-top full-width">
        <div class="logo margin-l-3 margin-t-2"><a href="/">QCredit</a></div>
        <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
@@ -35,23 +35,26 @@
                 <button id="signin" class="btn blue">sign in</button><button id="signup" class="btn blue margin-l-1">sign up</button>
             </div>
            <button id="avatar"  class="collapsible padding-t-1 d-flex btn">
-               <span class="padding-r-2 margin-t-1">admin</span> 
+               <span class="padding-r-2 margin-t-1">My account</span> 
                <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user" >
            </button>
            <ul class="drop-content">
-               <li class="padding-y-1"><a>my account</a></li>
-               <li class="padding-y-1"><a>profile</a></li>
-               <li class="padding-y-1"><a>Notifications</a></li>
+               <li class="padding-y-2"><a href="client.html">my account</a></li>
+               <li class="padding-y-2"><a>profile</a></li>
+               <li class="padding-y-2"><a>Notifications</a></li>
+               <div class="client-links">
+                    <li class="padding-y-2"><a href="apply-for-loan.html">Apply for Loan</a></li>
+                    <li class="padding-y-2"><a href="repayment-history.html" >repayment history</a></li>
+                </div>
            </ul>
            <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
        </div>
     </nav>    <main role="main">
-        <div id="client" class="white padding-3 shadow border-radius full-width margin-t-6">
+        <div id="client" class="white padding-3 shadow border-radius full-width">
             <b class="label">My account</b>
-            <h2>Client ID: QK67232922 <button class="btn small-btn f-green float-right">verified</button></h2>
+            <h2>Client ID: QK-67232922 <button class="btn small-btn f-green float-right">verified</button></h2>
             <table class="table plane-table">
-                <tbody>
-            
+                <tbody> 
                   <tr>
                     <td><b>Client Details :</b></td>
                     <td> <span>Andy watson</span><span class="padding-x-3">andy@gmail.com</span><span>$5300</span></td>
@@ -59,13 +62,13 @@
                   </tr>
             
                   <tr>
-                    <td><b>Created On :</b></td>
-                    <td>23-02-2019 8:00pm</td>
+                    <td><b>Username:</b></td>
+                    <td>Andy</td>
                   </tr>
             
                     <tr>
-                      <td><b>Repaid :</b></td>
-                      <td>False</td>
+                      <td><b>Password :</b></td>
+                      <td>************</td>
                     </tr>
                     <tr>
                     <tr>
@@ -73,7 +76,7 @@
                         <td>1000</td>
                     </tr>
                     <tr>
-                        <td><b>Payment installment :</b></td>
+                        <td><b>Loan Balance:</b></td>
                         <td>$109.00</td>
                       </tr>
                       <tr>
@@ -81,8 +84,8 @@
                         <td>$345</td>
                       </tr>
                       <tr>
-                        <td><strong>Interest :</strong></td>
-                        <td>10%</td>
+                        <td><strong>Current Loan:</strong></td>
+                        <td>None</td>
                       </tr>
                 </tbody>
               </table>
