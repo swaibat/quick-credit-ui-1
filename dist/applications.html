@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  href="assets/css/app.min.css" rel="stylesheet">
+    <title></title>
+</head>
+<body class="">
+    <nav class="flex-x shadow padding-y-1 fixed-top full-width">
+       <div class="logo margin-l-3 margin-t-2"><a href="/">QCredit</a></div>
+       <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
+           <li class="padding-y-3"><a class="active" href="dashboard.html">Dashboard</a></li>
+    
+           <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+           <ul class="accord m-l-4">
+               <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
+               <li class="padding-y-2"><a href="verified.html">Verified</a></li>
+               <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
+           </ul>
+    
+           <li class="collapsible padding-y-3 drop">Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+               <ul class="accord margin-l-n4">
+                   <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
+                   <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
+                   <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
+                   <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
+                   <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
+                   <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
+               </ul>
+       </ul>
+       <div class="margin-l-auto margin-r-3 d-flex">
+            <div class="auth-btn margin-t-1">
+                <button id="signin" class="btn blue">sign in</button><button id="signup" class="btn blue margin-l-1">sign up</button>
+            </div>
+           <button id="avatar"  class="collapsible padding-t-1 d-flex btn">
+               <span class="padding-r-2 margin-t-1">My account</span>
+               <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user" >
+           </button>
+           <ul class="drop-content">
+               <li class="padding-y-2"><a href="client.html">my account</a></li>
+               <li class="padding-y-2"><a>profile</a></li>
+               <li class="padding-y-2"><a>Notifications</a></li>
+               <div class="client-links">
+                    <li class="padding-y-2"><a href="apply-for-loan.html">Apply for Loan</a></li>
+                    <li class="padding-y-2"><a href="repayment-history.html" >repayment history</a></li>  
+                </div>
+                <li class="padding-y-2"><a href="/" >Logout</a></li>
+           </ul>
+           <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
+       </div>
+    </nav>    <main role="main">
+        
+        <div class="white padding-3 shadow border-radius full-width margin-t-6">
+            <b class="label">Loans applications</b>
+            <div class="scroll-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                        <th class="">LoanID</th>
+                        <th class="sort">Applicant email</th>
+                        <th class="sort">app.date</th>
+                        <th class="sort">Amount</th>
+                        <th class="sort">status</th>
+                        <th class="sort">operation</th>
+                    </tr>
+                  </thead>
+            
+                  <tbody>
+                    <tr>
+                      <td>QK74849</td>
+                      <td>theo@gmail.com</td>
+                      <td>09-11-2019</td>
+                      <td>$750</td>
+                      <td><button class="btn small-btn f-green">repaid</button></td>
+                      <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                    </tr>
+            
+                    <tr>
+                      <td>QK30043</td>
+                      <td>andy@gmail.com</td>
+                      <td>09-11-2019</td>
+                      <td>$300</td>
+                      <td><button class="btn small-btn f-blue">Current</button></td>
+                      <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                    </tr>
+            
+                    <tr class="special-loan">
+                      <td>QK25744</td>
+                      <td>swaib@gmail.com</td>
+                      <td>09-11-2019</td>
+                      <td>$25000</td>
+                      <td><button class="btn small-btn f-orange">pending</button></td>
+                      <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                    </tr>
+            
+                    <tr>
+                      <td>QK56748</td>
+                      <td>john@gmail.com</td>
+                      <td>09-11-2019</td>
+                      <td>$120</td>
+                      <td><button class="btn small-btn f-green">repaid</button></td>
+                      <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                    </tr>
+            
+                    <tr>
+                      <td>QK86749</td>
+                      <td>henry@gmail.com</td>
+                      <td>09-11-2019</td>
+                      <td>$500</td>
+                      <td><button class="btn small-btn f-blue">Current</button></td>
+                      <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                    </tr>
+            
+                    <tr>
+                      <td>QK98833</td>
+                      <td>keneth@gmail.com</td>
+                      <td>09-11-2019</td>
+                      <td>$3000</td>
+                      <td><button class="btn small-btn f-orange">pending</button></td>
+                      <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                    </tr>
+        
+                    <tr>
+                        <td>QK13884</td>
+                        <td>keneth@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>$3000</td>
+                        <td><button class="btn small-btn f-green">pending</button></td>
+                        <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                      </tr>
+                      <tr>
+                        <td>QK94032</td>
+                        <td>keneth@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>$3000</td>
+                        <td><button class="btn small-btn f-blue">current</button></td>
+                        <td><a href="loan-details.html" class="btn pin-btn blue">edit</a><a href="loan-details.html" class="btn pin-btn red">del</a></td>
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
+        
+    </main>
+    <footer class="fixed-bottom shadow-top padding-y-3 full-width">
+        <a>Quick credit 2019</a>
+    </footer>
+    <script src="assets/js/app.min.js"></script>
+    </body>
+</html>
