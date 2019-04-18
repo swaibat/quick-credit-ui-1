@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  href="assets/css/app.min.css" rel="stylesheet">
+    <title>docs</title>
+</head>
+<body class="docs">
+    <nav class="flex-x shadow padding-y-1 fixed-top full-width">
+       <div class="logo margin-l-3 margin-t-2"><a href="/">QCredit</a></div>
+       <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
+           <li class="padding-y-3"><a class="active" href="dashboard.html">Dashboard</a></li>
+    
+           <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+           <ul class="accord m-l-4">
+               <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
+               <li class="padding-y-2"><a href="verified.html">Verified</a></li>
+               <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
+           </ul>
+    
+           <li class="collapsible padding-y-3 drop">Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+               <ul class="accord margin-l-n4">
+                   <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
+                   <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
+                   <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
+                   <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
+                   <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
+                   <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
+               </ul>
+       </ul>
+       <div class="margin-l-auto margin-r-3 d-flex">
+            <div class="auth-btn margin-t-1">
+                <button id="signin" class="btn blue">sign in</button><button id="signup" class="btn blue margin-l-1">sign up</button>
+            </div>
+           <button id="avatar"  class="collapsible padding-t-1 d-flex btn">
+               <span class="padding-r-2 margin-t-1">My account</span>
+               <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user" >
+           </button>
+           <ul class="drop-content">
+               <li class="padding-y-2"><a href="client.html">my account</a></li>
+               <li class="padding-y-2"><a>profile</a></li>
+               <li class="padding-y-2"><a>Notifications</a></li>
+               <div class="client-links">
+                    <li class="padding-y-2"><a href="apply-for-loan.html">Apply for Loan</a></li>
+                    <li class="padding-y-2"><a href="repayment-history.html" >repayment history</a></li>  
+                </div>
+                <li class="padding-y-2"><a href="/" >Logout</a></li>
+           </ul>
+           <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
+       </div>
+    </nav>    <main role="main">
+        <div class="slider blue padding-3 d-flex">
+            <div class="hero-txt resp-50 white-txt">
+                <h1 class="margin-b-2">quick credit</h1>
+                <p class="padding-3">Quick Credit is anonline lending platform that provides short term soft loans to individuals.This helps solve problems of financial inclusion as away to alleviate poverty and empower low income earners.</p>
+            </div>
+            <div class="hero">
+                <img class="position-absolute bg-img float-right" src="assets/img/quick-credit-preview.png"  alt="">
+            </div>
+        </div>
+        <div class="padding-5">
+        <h1>File structure</h1>
+        <hr>
+        <p >Within Quick credit UI you WIll find the following directories and files. Cross check in any of the file misses the app may have a problem while bieng excetuted</p>
+                <pre>
+                    <code>
+        Quick-credit-ui-1/
+                    │
+                    ├── dist/
+                    │   ├── assets/
+                    │   └── pages
+                    ├── documentation/
+                    ├── src/
+                    │   ├── assets/
+                    │   ├── layouts/
+                    │   ├── pages/
+                    │   └── patials/
+                    ├── .gitignore/
+                    ├── gulpfile.js
+                    ├── LICENCE
+                    ├── package.json
+                    └──README.md 
+                    </code>
+                </pre>
+        
+            <h1>Getting Started</h1>
+            <hr>
+            <p>on your local machine run the following command that will enable you save Quick credit Ui on your local machine(you need to have git installed on your machine) OR Or you can download it manually on clone or download button</p>
+            <code>$ git clone https://github.com/swaibat/quick-credit-ui-1.git</code>
+            <p>open  the file and the check <code> dist </code> directory thats where all the necessary pages and their assets are found</p>
+            <code>$ cd quick-credit-ui-1 </code><p>then</p>
+            <code>quick-credit-ui-1/dist</code>
+        
+            <h2 class="padding-5">For developers</h2>
+        requirements
+        <table>
+            <t-body>
+                    <tr><td>Nodejs:</td><td>download nodejs <a href="https://nodejs.org"> here </a></td></tr>
+                    <tr><td>gulp:</td><td>run <code> $ npm install gulp-cli -g</code> to install gulp globally</td></tr>
+                    <tr><td>Modules:</td><td>then run <code> $ npm install</code> to install all the necessary module for tha app to operate</td></tr>
+            </t-body>
+        </table>
+        <p>Now you will be able to edit files located in <code> src </code> folder and your files will be watched each time you make a change and browser will be refreshed each time you edit</p>
+        <h3 class="teal-txt">THANK YOU</h3>
+        <div class="align-center margin-t-6">
+            <h2>Rumbiiha Swaibu</h2>
+            <div class="flex-y">
+                <b>Front-end Developer</b>
+                <small>Website: https://sassybootstrap.com</small>
+                <small>Github: https://github.com/swaibat</small>
+                <small>Codepen:https://codepen.io/swaibu</small>
+            </div>
+        </div>
+        </div>
+        
+        
+        
+    </main>
+    <footer class="shadow-top padding-y-3 full-width">
+        <a>Quick credit 2019</a>
+    </footer>
+    <script src="assets/js/app.min.js"></script>
+    </body>
+</html>
