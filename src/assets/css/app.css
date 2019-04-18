@@ -22,7 +22,9 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
+*{
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: rgb(70, 68, 68);
@@ -47,7 +49,7 @@ li {
 }
 
 main {
-  margin-left: 12rem;
+  margin: 7rem 4rem 7rem 12rem;
 }
 
 nav {
@@ -93,7 +95,9 @@ footer {
 .login .mobile-view {
   display: none;
 }
-
+.login .auth-btn{
+  display: inline;
+}
 .login main {
   margin: 7rem 10rem;
 }
@@ -121,7 +125,7 @@ input {
 
 
 /* client page */
-.client .auth-btn,
+.auth-btn,
 .client #collapse-menu{
   display: none;
 }
@@ -136,6 +140,28 @@ input {
 }
 .client.account tr td:nth-child(even) {
     float: right;
+}
+.stat-card {
+  width: 16rem;
+  border-radius: var(--border-radius);
+  margin-left: 1.5rem;
+  max-height: 5rem;
+  margin-bottom: 1rem;
+
+}
+/* admin */
+.admin.dashboard main{
+  margin: 7rem 1rem 7rem 12rem;
+}
+.admin main{
+  margin: 7rem 4rem 7rem 12rem;
+}
+.admin .client-links{
+  display: none;
+}
+.admin .margin-l-auto .drop-content{
+  margin-left: 0rem;
+
 }
 
 /* ========================[ media ]=====================*/
@@ -158,8 +184,8 @@ input {
       font-size: 1.5rem;
   }
   main {
-      margin-left: .5rem;
-      margin-right: .5rem;
+      margin-left: 1rem;
+      margin-right: 4rem;
   }
   .accord {
       display: none;
@@ -174,18 +200,27 @@ input {
       color: #6e6969;
   }
   .stat-card {
-      width: 40%;
+    width: 43%;
   }
   .resp-50 {
-      width: 100%;
+      width: 100% !important;
   }
   footer {
       text-align: center;
       background: #fff;
       margin-left: -.1rem;
   }
+  .label {
+    position: inherit !important;
+  }
   .login main {
       margin-left: 1rem;
+  }
+  .admin main{
+    margin: 7rem 1rem 7rem 1rem !important;
+  }
+  .admin .flex-sm-wrap{
+    flex-wrap: wrap;
   }
 
 }
@@ -201,16 +236,32 @@ input {
   background: var(--theme-color) !important;
 }
 
+.blue-txt{
+  color: var(--theme-color) !important;
+}
+
 .teal {
   background: var(--teal) !important;
+}
+
+.teal-txt {
+  color: var(--teal) !important;
 }
 
 .orange {
   background: var(--orange) !important;
 }
 
+.orange-txt {
+  color: var(--orange) !important;
+}
+
 .red {
   background: var(--red) !important;
+}
+
+.red-txt {
+  color: var(--red) !important;
 }
 
 .green {
@@ -272,7 +323,11 @@ input {
   font-size: 15px;
   line-height: 1.5;
   cursor: pointer;
-  color: #b9b8b8;
+  color: #ffffff;
+}
+
+#avatar span,.btn.mobile-view{
+  color: rgb(68, 68, 68);
 }
 
 .btn:hover {
@@ -331,7 +386,7 @@ td {
 
 .resp-50 {
   background: white;
-  width: 46.5%;
+  width: 45.5%;
 }
 
 
