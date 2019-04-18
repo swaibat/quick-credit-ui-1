@@ -47,7 +47,7 @@ li {
 }
 
 main {
-  margin-left: 12rem;
+  margin: 7rem 4rem 7rem 12rem;
 }
 
 nav {
@@ -158,8 +158,8 @@ input {
       font-size: 1.5rem;
   }
   main {
-      margin-left: .5rem;
-      margin-right: .5rem;
+      margin-left: 1rem;
+      margin-right: 4rem;
   }
   .accord {
       display: none;
@@ -183,6 +183,9 @@ input {
       text-align: center;
       background: #fff;
       margin-left: -.1rem;
+  }
+  .label {
+    position: inherit !important;
   }
   .login main {
       margin-left: 1rem;
@@ -272,7 +275,11 @@ input {
   font-size: 15px;
   line-height: 1.5;
   cursor: pointer;
-  color: #b9b8b8;
+  color: #ffffff;
+}
+
+#avatar span{
+  color: rgb(68, 68, 68);
 }
 
 .btn:hover {
