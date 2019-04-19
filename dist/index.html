@@ -8,60 +8,63 @@
     <title>login</title>
 </head>
 <body class="login">
+    <!-- start of navigation -->
     <nav class="flex-x shadow padding-y-1 fixed-top full-width">
-       <div class="logo margin-l-3 margin-t-2"><a href="/">QCredit</a></div>
-       <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
-           <li class="padding-y-3"><a class="active" href="dashboard.html">Dashboard</a></li>
-    
-           <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
-           <ul class="accord m-l-4">
-               <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
-               <li class="padding-y-2"><a href="verified.html">Verified</a></li>
-               <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
-           </ul>
-    
-           <li class="collapsible padding-y-3 drop">Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
-               <ul class="accord margin-l-n4">
-                   <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
-                   <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
-                   <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
-                   <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
-                   <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
-                   <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
-               </ul>
-       </ul>
-       <div class="margin-l-auto margin-r-3 d-flex">
-            <div class="auth-btn margin-t-1">
-                <button id="signin" class="btn blue">sign in</button><button id="signup" class="btn blue margin-l-1">sign up</button>
-            </div>
-           <button id="avatar"  class="collapsible padding-t-1 d-flex btn">
-               <span class="padding-r-2 margin-t-1">My account</span>
-               <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user" >
-           </button>
-           <ul class="drop-content">
-               <li class="padding-y-2"><a href="client.html">my account</a></li>
-               <li class="padding-y-2"><a>profile</a></li>
-               <li class="padding-y-2"><a>Notifications</a></li>
-               <div class="client-links">
-                    <li class="padding-y-2"><a href="apply-for-loan.html">Apply for Loan</a></li>
-                    <li class="padding-y-2"><a href="repayment-history.html" >repayment history</a></li>  
+            <div class="logo margin-l-3 margin-t-2"><a href="/">Q<span>uick</span> C<span>redit</span></a></div>
+            <!-- start of sidenav -->
+            <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
+                <li class="padding-y-3"><a class="active" href="dashboard.html">Dashboard</a></li>
+                <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+                <ul class="accord m-l-4">
+                    <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
+                    <li class="padding-y-2"><a href="verified.html">Verified</a></li>
+                    <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
+                </ul>
+                <li class="collapsible padding-y-3 drop">Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+                <ul class="accord margin-l-n4">
+                    <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
+                    <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
+                    <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
+                    <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
+                    <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
+                    <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
+                </ul>
+            </ul>
+            <div class="margin-l-auto margin-r-3 d-flex">
+                <div class="auth-btn margin-t-1">
+                    <button id="signin" class="btn blue">sign in</button>
+                    <button id="signup" class="btn blue margin-l-1">sign up</button>
                 </div>
-                <li class="padding-y-2"><a href="/" >Logout</a></li>
-           </ul>
-           <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
-       </div>
-    </nav>    <main role="main">
-        <form class="margin-t-4" action="" >
-            <div id="signin-body" class="signin" >
-                <button id="admin-btn" class="btn blue">Admin</button><button id="client-btn" class="btn blue margin-l-1">client</button>
-                <div id="client" class="signin" >
+                <button id="avatar" class="collapsible padding-t-1 d-flex btn">
+                    <span class="padding-r-2 margin-t-1">My account</span>
+                    <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user">
+                </button>
+                <ul class="drop-content">
+                    <li class="padding-y-2"><a href="client.html">my account</a></li>
+                    <li class="padding-y-2"><a>profile</a></li>
+                    <li class="padding-y-2"><a>Notifications</a></li>
+                    <div class="client-links">
+                        <li class="padding-y-2"><a href="apply-for-loan.html">Apply for Loan</a></li>
+                        <li class="padding-y-2"><a href="repayment-history.html">repayment history</a></li>
+                    </div>
+                    <li class="padding-y-2"><a href="/">Logout</a></li>
+                </ul>
+                <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
+            </div>
+        </nav>
+        <!-- //navigation -->    <main role="main">
+        <form class="margin-t-4" action="">
+            <div id="signin-body" class="signin">
+                <button id="admin-btn" class="btn blue">Admin</button>
+                <button id="client-btn" class="btn blue margin-l-1">client</button>
+                <div id="client" class="signin">
                     <h3 class="align-center margin-l-n3">We missed you !!!!</h3>
                     <input type="text" placeholder="username or email">
                     <input type="password" placeholder="password" minlength="5">
                     <br>
                     <button class="btn blue margin-l-5 margin-y-4 "><a href="client.html">login now</a></button>
                 </div>
-                <div id="admin" class="signin display-none" >
+                <div id="admin" class="signin display-none">
                     <h3 class="align-center margin-l-n3">Welcome back Admin</h3>
                     <input type="text" placeholder="admin username" required>
                     <input type="password" placeholder="admin password" minlength="5">
@@ -76,12 +79,11 @@
                 <input type="text" placeholder="Username">
                 <input type="text" placeholder="Adress">
                 <input type="email" placeholder="Email adress">
-                <input type="password" placeholder="Password" minlength="5" >
+                <input type="password" placeholder="Password" minlength="5">
                 <br>
                 <button class="btn blue margin-l-5 margin-y-4 "><a href="/">login now</a></button>
             </div>
         </form>
-        
         
     </main>
     <footer class="shadow-top padding-y-3 full-width">

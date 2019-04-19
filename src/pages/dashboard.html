@@ -2,21 +2,25 @@
 title: dashboard admin
 ---
 <div class="flex-wrap">
-    <div class="stat-card padding-1 padding-y-2  shadow ">
-        <b class="padding-3">All users</b>
+    <div class="stat-card padding-1   shadow ">
+        <h3 class="padding-1">All users</h3>
         <h1 class="align-center blue-txt ">200</h1>
+        <span class="btn blue">U</span>
     </div>
     <div class="stat-card padding-1 shadow">
-        <b class="padding-3">Pending Laons</b>
+        <h3 class="padding-1">Pending Laons</h3>
         <h1 class="align-center orange-txt">200</h1>
+        <span class="btn orange">P</span>
     </div>
     <div class="stat-card padding-1 shadow">
-        <b class="padding-3">Approved</b>
+        <h3 class="padding-1">Approved Loans</h3>
         <h1 class="align-center teal-txt">200</h1>
+        <span class="btn teal">A</span>
     </div>
     <div class="stat-card padding-1 shadow">
-        <b class="padding-3 ">rejected loans</b>
+        <h3 class="padding-1">Rejected loans</h3>
         <h1 class="align-center red-txt">200</h1>
+        <span class="btn red">R</span>
     </div>
 </div>
 
@@ -26,43 +30,53 @@ title: dashboard admin
         <div class="scroll-table">
             <table class="table">
                 <thead>
-                <tr>
-                    <th class="sort">Email</th>
-                    <th class="sort">Reg.date</th>
-                    <th class="sort">status</th>
-                </tr>
+                    <tr>
+                        <th>Email</th>
+                        <th>Reg.date</th>
+                        <th>status</th>
+                    </tr>
                 </thead>
-        
+
                 <tbody>
-                <tr>
-                    <td>theo@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>andy@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>swaib@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-orange">unverified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>john@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>henry@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
+                    <tr>
+                        <td>theo@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-green">verified</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>andy@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-green">verified</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>swaib@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-orange">unverified</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>john@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-green">verified</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>henry@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-green">verified</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -72,43 +86,59 @@ title: dashboard admin
         <div class="scroll-table">
             <table class="table">
                 <thead>
-                <tr>
-                    <th class="sort">Email</th>
-                    <th class="sort">Reg.date</th>
-                    <th class="sort">status</th>
-                </tr>
+                    <tr>
+                        <th>Loan ID</th>
+                        <th>Email</th>
+                        <th>Reg.date</th>
+                        <th>status</th>
+                    </tr>
                 </thead>
-        
+
                 <tbody>
-                <tr>
-                    <td>theo@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>andy@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>swaib@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-orange">unverified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>john@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
-        
-                <tr>
-                    <td>henry@gmail.com</td>
-                    <td>09-11-2019</td>
-                    <td><button class="btn small-btn f-green">verified</button></td>
-                </tr>
+                    <tr>
+                        <td>QK74849</td>
+                        <td>theo@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-orange">pending</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>QK74849</td>
+                        <td>andy@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-blue">current</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>QK74849</td>
+                        <td>swaib@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-blue">current</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>QK74849</td>
+                        <td>john@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-blue">current</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>QK74849</td>
+                        <td>henry@gmail.com</td>
+                        <td>09-11-2019</td>
+                        <td>
+                            <button class="btn small-btn f-green">repaid</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
