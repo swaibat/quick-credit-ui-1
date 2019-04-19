@@ -7,7 +7,7 @@ Quick Credit is anonline lending platform that provides short term soft loans to
 
 Within Quick credit UI you WIll find the following directories and files. Cross check in any of the file misses the app may have a problem while bieng excetuted
 
-``                 `Quick-credit-ui-1/
+<pre>                `Quick-credit-ui-1/
                     │
                     ├── dist/
                     │   ├── assets/
@@ -23,7 +23,7 @@ Within Quick credit UI you WIll find the following directories and files. Cross 
                     ├── LICENCE
                     ├── package.json
                     └──README.md` 
-`` 
+</pre>
 
 # Getting Started
 
