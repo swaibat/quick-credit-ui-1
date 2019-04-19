@@ -1,4 +1,7 @@
 # quick-credit-ui-1
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/swaibat/sassadminlite/blob/master/LICENSE)
+
 Quick Credit is anonline lending platform that provides short term soft loans to individuals.This helps solve problems of financial inclusion as away to alleviate poverty and empower low income earners.
 # preview image
 ![quick-credit-ui!](https://sassybootstrap.com/external/quick%20credit%20preview1%20copy.png "quick-credit-ui")
