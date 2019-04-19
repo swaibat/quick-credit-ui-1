@@ -62,6 +62,7 @@ footer {
   margin-bottom: -.5rem;
   height: 1rem;
   bottom: 0;
+  position: absolute;
 }
 
 .mobile-view {
