@@ -105,7 +105,7 @@ footer {
 }
 
 .login footer {
-  bottom: 0;
+  position: fixed;
 }
 
 input {
@@ -275,6 +275,9 @@ th {
   }
   .resp-50 {
       width: 100% !important;
+  }
+  .resp-50:nth-child(even) {
+    margin-left: -.3rem !important;
   }
   .label {
       position: inherit !important;
@@ -483,6 +486,9 @@ td {
 
 .resp-50 {
   width: 45.5%;
+}
+.resp-50:nth-child(even) {
+  margin-left: 1rem;
 }
 
 
