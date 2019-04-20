@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
@@ -62,7 +61,6 @@ footer {
   margin-bottom: -.5rem;
   height: 1rem;
   bottom: 0;
-  position: absolute;
 }
 
 .mobile-view {
@@ -107,7 +105,7 @@ footer {
 }
 
 .login footer {
-  bottom: 0;
+  position: fixed;
 }
 
 input {
@@ -236,7 +234,7 @@ th {
 
 /* ========================[ media ]=====================*/
 
-@media (max-width: 768px) {
+@media (max-width: 774px) {
   .navbar {
       width: 100%;
       height: 0rem;
@@ -278,6 +276,9 @@ th {
   .resp-50 {
       width: 100% !important;
   }
+  .resp-50:nth-child(even) {
+    margin-left: -.3rem !important;
+  }
   .label {
       position: inherit !important;
   }
@@ -287,6 +288,9 @@ th {
   .admin main {
       margin: 7rem 1rem 7rem 1rem !important;
   }
+  .admin .margin-l-auto .drop-content {
+    margin-left: -4.3rem;
+  }
   .admin .flex-sm-wrap {
       flex-wrap: wrap;
   }
@@ -295,6 +299,22 @@ th {
   }
 }
 
+@media (max-width: 500px) {
+
+  .stat-card {
+      width: 90%;
+      margin-left: .5rem;
+  }
+  .resp-50 {
+      width: 90% !important;
+      margin-left:-.3rem;
+  }
+  .drop-content {
+    padding: 1.5rem;
+    margin-top: 3.5rem;
+    margin-right: 2rem;
+  }
+} 
 
 /* ========================[ colors ]=====================*/
 
@@ -426,7 +446,7 @@ th {
 .label {
   margin-top: -1.5rem;
   position: absolute;
-  background: blue;
+  background: var(--theme-color);
   border-radius: 10px;
   padding: 1px 10px;
   color: white;
@@ -466,6 +486,9 @@ td {
 
 .resp-50 {
   width: 45.5%;
+}
+.resp-50:nth-child(even) {
+  margin-left: 1rem;
 }
 
 
