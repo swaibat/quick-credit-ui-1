@@ -7,7 +7,7 @@ Quick Credit is anonline lending platform that provides short term soft loans to
 [view Demo Here](https://swaibat.github.io/quick-credit-ui-1/)
 
 # preview image
-![quick-credit-ui!](https://svgshare.com/f/Cig.svg)
+![quick-credit-ui!](https://i.ibb.co/FwYWycC/quick-credit-preview1.png "preview")
 
 # Folder structure
 
