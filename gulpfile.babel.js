@@ -1,11 +1,12 @@
  
-const browsersync = require("browser-sync").create(),
-cleanCSS = require("gulp-clean-css"),
-del = require("del"),
-gulp = require("gulp"),
-panini = require("panini"),
-rename = require("gulp-rename"),
-uglify = require("gulp-uglify");
+// Load modules
+import browsersync from 'browser-sync'
+import cleanCSS from'gulp-clean-css'
+import del from 'del'
+import gulp from 'gulp'
+import panini from 'panini'
+import rename from "gulp-rename"
+import uglify from 'gulp-uglify'
 
 // BrowserSync
 function browserSync(done) {
@@ -90,5 +91,5 @@ gulp.watch('src/assets/img/**/*', images);
 gulp.watch('src/{layouts,includes,helpers,partials}/**/*', gulp.series(htmlReset,html,browserSyncReload));
 }
 
-const build = gulp.series(clean, gulp.parallel(html,styles,scripts,images));
-exports.default = gulp.series(build, gulp.parallel(browserSync,watchfiles));
+const build = gulp.series(gulp.series(clean, gulp.parallel(html,styles,scripts,images)), gulp.parallel(browserSync,watchfiles));
+export default build;
