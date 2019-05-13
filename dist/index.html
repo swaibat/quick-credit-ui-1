@@ -54,37 +54,43 @@
             </div>
         </nav>
         <!-- //navigation -->    <main role="main">
-        <form class="margin-t-4" action="">
+        <div class="margin-t-4">
             <div id="signin-body" class="signin">
                 <button id="admin-btn" class="btn blue">Admin</button>
                 <button id="client-btn" class="btn blue margin-l-1">client</button>
                 <div id="client" class="signin">
-                    <h3 class="align-center margin-l-n3">We missed you !!!!</h3>
-                    <input type="text" placeholder="username or email" required>
-                    <input type="password" placeholder="password" minlength="5" required>
-                    <br>
-                    <button class="btn blue margin-l-5 margin-y-4 "><a href="client.html">login now</a></button>
+                    <form action="login.html">
+                        <h3 class="align-center margin-l-n3">We missed you !!!!</h3>
+                        <input type="text" placeholder="username or email" required>
+                        <input type="password" placeholder="password" minlength="5" required>
+                        <br>
+                        <button class="btn blue margin-l-5 margin-y-4 "><a href="client.html">login now</a></button>
+                    </form>
                 </div>
                 <div id="admin" class="signin display-none">
-                    <h3 class="align-center margin-l-n3">Welcome back Admin</h3>
-                    <input type="text" placeholder="admin username" required>
-                    <input type="password" placeholder="admin password" minlength="5" required>
-                    <br>
-                    <button class="btn blue margin-l-5 margin-y-4 "><a href="dashboard.html">login now</a></button>
+                    <form action="">
+                        <h3 class="align-center margin-l-n3">Welcome back Admin</h3>
+                        <input type="text" placeholder="admin username" required>
+                        <input type="password" placeholder="admin password" minlength="5" required>
+                        <br>
+                        <button class="btn blue margin-l-5 margin-y-4 "><a href="dashboard.html">login now</a></button>
+                    </form>
                 </div>
             </div>
             <div id="signup-body" class="display-none margin-t-n6">
-                <h3 class="align-center margin-l-n3">Please feed in your details</h3>
-                <input type="text" placeholder="Firstname" required>
-                <input type="text" placeholder="Lastname" required>
-                <input type="text" placeholder="Username" required>
-                <input type="text" placeholder="Adress" required>
-                <input type="email" placeholder="Email adress" required>
-                <input type="password" placeholder="Password" minlength="5" required>
-                <br>
-                <button class="btn blue margin-l-5 margin-y-4" type="submit"><a href="login.html">Signup now</a></button>
+                <form action="">
+                    <h3 class="align-center margin-l-n3">Please feed in your details</h3>
+                    <input type="text" placeholder="Firstname" required>
+                    <input type="text" placeholder="Lastname" required>
+                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Adress" required>
+                    <input type="email" placeholder="Email adress" required>
+                    <input type="password" placeholder="Password" minlength="5" required>
+                    <br>
+                    <button class="btn blue margin-l-5 margin-y-4" type="submit"><a href="login.html">Signup now</a></button>
+                </form>
             </div>
-        </form>
+        </div>
         
     </main>
     <footer class="shadow-top padding-y-3 full-width">

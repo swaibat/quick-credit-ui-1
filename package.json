@@ -1,6 +1,6 @@
 {
   "name": "quick-credit-ui-1",
-  "version": "v1",
+  "version": "1.0.0",
   "description": "[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/swaibat/sassadminlite/blob/master/LICENSE)",
   "main": "gulpfile.js",
   "scripts": {
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/swaibat/quick-credit-ui-1#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
     "browser-sync": "^2.26.3",
     "del": "^4.1.0",
     "gulp": "^4.0.0",
