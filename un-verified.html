@@ -1,108 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link  href="assets/css/app.min.css" rel="stylesheet">
-    <title>verified users</title>
+	<link rel="shortcut icon" href="assets/img/favicon.svg">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <title>un-verified users</title>
 </head>
-<body class="verified users">
+
+<body>
     <!-- start of navigation -->
-    <nav class="flex-x shadow padding-y-1 fixed-top full-width">
-            <div class="logo margin-l-3 margin-t-2"><a href="login.html">Q<span>uick</span> C<span>redit</span></a></div>
-            <li class="margin-l-6 margin-t-3"><a href="documentation.html"><span class="mobile-view">Docs</span><span class="docum">Documentation</span></a></li>
-            <!-- start of sidenav -->
-            <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
-                <li class="padding-y-3"><a class="active" href="dashboard.html">Dashboard</a></li>
-                <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
-                <ul class="accord m-l-4">
-                    <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
-                    <li class="padding-y-2"><a href="verified.html">Verified</a></li>
-                    <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
-                </ul>
-                <li class="collapsible padding-y-3 drop"> Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
-                <ul class="accord margin-l-n4">
-                    <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
-                    <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
-                    <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
-                    <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
-                    <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
-                    <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
-                </ul>
+    <nav class="flex-x shadow padding-y-1 fixed-top full-width white">
+        <div class="logo margin-l-3 margin-t-2 "><a class="blue-txt" href="index.html">Q<span>uick</span> C<span>redit</span></a></div> 
+        <!-- start of sidenav -->
+        <ul class=" margin-l-n3 navbar fixed-left  shadow" id="collapse-menu">
+            <li class="padding-y-3"><a class="active" href="dashboard.html">Dashboard</a></li>
+            <li class="collapsible padding-y-3">Users<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+            <ul class="accord m-l-4">
+                <li class=" margin-t-2"><a href="users.html">All Clients</a></li>
+                <li class="padding-y-2"><a href="verified.html">Verified</a></li>
+                <li class="padding-y-2"><a href="un-verified.html">Un-verified</a></li>
             </ul>
-            <div class="margin-l-auto margin-r-3 d-flex">
-                <div class="auth-btn margin-t-1">
-                    <button id="signin" class="btn blue">sign in</button>
-                    <button id="signup" class="btn blue margin-l-1">sign up</button>
-                </div>
-                <button id="avatar" class="collapsible padding-t-1 d-flex btn">
-                    <span class="padding-r-2 margin-t-1">My account</span>
-                    <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user">
-                </button>
-                <ul class="drop-content">
-                    <li class="padding-y-2"><a href="client.html">my account</a></li>
-                    <li class="padding-y-2"><a>profile</a></li>
-                    <li class="padding-y-2"><a>Notifications</a></li>
-                    <div class="client-links">
-                        <li class="padding-y-2"><a href="apply-for-loan.html">Apply for Loan</a></li>
-                        <li class="padding-y-2"><a href="repayment-history.html">repayment history</a></li>
-                    </div>
-                    <li class="padding-y-2"><a href="login.html">Logout</a></li>
-                </ul>
-                <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
+            <li class="collapsible padding-y-3 drop"> Loans<span class="float-right margin-r-2 mobile-view">&#9660;</span></li>
+            <ul class="accord margin-l-n4">
+                <li class="margin-t-2"><a href="applications.html">All Applications</a></li>
+                <li class="padding-y-2 margin-t-2"><a href="special.html">Special Loans</a></li>
+                <li class="padding-y-2 margin-t-2"><a href="current.html">Current</a></li>
+                <li class="padding-y-2 margin-t-2"><a href="pending.html">Pending</a></li>
+                <li class="padding-y-2"><a href="repaid.html">Repaid</a></li>
+                <li class="padding-y-2"><a href="post-loan-repayment.html">Post repayment</a></li>
+            </ul>
+        </ul>
+        <div class="margin-l-auto margin-r-3 d-flex">
+            <button id="avatar" class="collapsible padding-t-1 d-flex btn">
+                <span class="padding-r-2 margin-t-1">My account</span>
+                <img class="circle" src="./assets/img/user.svg" height="35" width="35" alt="user">
+            </button>
+            <ul class="drop-content shadow">
+                <li class="padding-y-2">my account</li>
+                <li class="padding-y-2"><a>profile</a></li>
+                <li class="padding-y-2"><a>Notifications</a></li>
+                <li class="padding-y-2"><a href="index.html">Logout</a></li>
+            </ul>
+            <button type="button" onclick="toggle()" class="btn mobile-view"><span class="humberger">&#8942;</span></button>
+        </div>
+    </nav>
+    <!-- //navigation -->
+    <main role="main">
+        <div class="white padding-3 shadow border-radius full-width page-container">
+            <b class="label">un-verified Users</b>
+            <div class="scroll-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="">Username</th>
+                            <th>Email</th>
+                            <th>Reg.date</th>
+                            <th>status</th>
+                            <th>operation</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>swaibu</td>
+                            <td>swaib@gmail.com</td>
+                            <td>09-11-2019</td>
+                            <td>
+                                <button class="btn small-btn f-orange">unverified</button>
+                            </td>
+                            <td>
+                                <button class="btn pin-btn blue"><a href="client-verify.html">verify</a></button>
+                                <button class="btn pin-btn red">del</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Keneth</td>
+                            <td>keneth@gmail.com</td>
+                            <td>09-11-2019</td>
+                            <td>
+                                <button class="btn small-btn f-orange">unverified</button>
+                            </td>
+                            <td>
+                                <button class="btn pin-btn blue"><a href="client-verify.html">verify</a></button>
+                                <button class="btn pin-btn red">del</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
-        </nav>
-        <!-- //navigation -->    <main role="main">
-        <div class="white padding-3 shadow border-radius full-width margin-t-6">
-          <b class="label">un-verified Users</b>
-          <div class="scroll-table">
-              <table class="table">
-                  <thead>
-                      <tr>
-                          <th class="">Username</th>
-                          <th>Email</th>
-                          <th>Reg.date</th>
-                          <th>status</th>
-                          <th>operation</th>
-                      </tr>
-                  </thead>
-        
-                  <tbody>
-                      <tr>
-                          <td>swaibu</td>
-                          <td>swaib@gmail.com</td>
-                          <td>09-11-2019</td>
-                          <td>
-                              <button class="btn small-btn f-orange">unverified</button>
-                          </td>
-                          <td>
-                             <button  class="btn pin-btn blue"><a href="client-verify.html">verify</a></button>
-                              <button class="btn pin-btn red">del</button>
-                          </td>
-                      </tr>
-        
-                      <tr>
-                          <td>Keneth</td>
-                          <td>keneth@gmail.com</td>
-                          <td>09-11-2019</td>
-                          <td>
-                              <button class="btn small-btn f-orange">unverified</button>
-                          </td>
-                          <td>
-                            <button  class="btn pin-btn blue"><a href="client-verify.html">verify</a></button>
-                              <button class="btn pin-btn red">del</button>
-                          </td>
-                      </tr>
-        
-                  </tbody>
-              </table>
-          </div>
-        
+
     </main>
     <footer class="shadow-top padding-y-3 full-width">
         <a>Quick credit 2019</a>
     </footer>
     <script src="assets/js/app.min.js"></script>
-    </body>
+</body>
+
 </html>
