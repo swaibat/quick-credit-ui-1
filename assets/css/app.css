@@ -151,7 +151,7 @@ input {
 
 .card-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .stat-card {
