@@ -138,6 +138,10 @@ input {
   padding: .7rem;
 }
 
+input:focus {
+  border: solid 1px var(--theme-color);
+}
+
 [type="checkbox"] {
   width: 5%;
 }
@@ -379,6 +383,10 @@ input {
   line-height: 1.5;
   cursor: pointer;
   color: #ffffff;
+}
+
+.btn:hover {
+  filter: contrast(60%);
 }
 
 #avatar span,
